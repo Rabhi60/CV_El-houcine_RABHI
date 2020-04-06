@@ -1,5 +1,47 @@
 /************* Général **************/
-
+h2{
+		text-transform: uppercase;
+}
 /************* Body ****************/
+body{
+	display: flex;
+}
+/************* Header *************/
+header{
 
-/************* Section *************/
+}
+header h2{
+		text-transform: none;
+}
+
+/************* Section1 *************/
+#section1{
+	display: flex;
+}
+#liseret{
+	background-color: purple;
+	width: 30%;
+	margin-right: 45px;
+}
+#image{
+	background: url(images/img_mini.jpg);
+    overflow:hidden;
+    -webkit-border-radius:80px;
+    -moz-border-radius:80px;
+    border-radius:80px;
+    width:140px;
+    height: 140px;
+	margin: 40px auto 20px auto;
+}
+.bloc_liseret h2{
+	color: white;
+	font-weight: normal;
+	height: 25px;
+	background-color: black;
+}
+
+/************* Section2 *************/
+#section2{
+	position: relative;
+
+}
