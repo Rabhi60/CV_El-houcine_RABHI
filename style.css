@@ -1,47 +1,121 @@
 /************* Général **************/
 h2{
-		text-transform: uppercase;
+	text-transform: uppercase;
+}
+p{
+	font-size: 0.8em;
+}
+
+.article_title{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1.2em;
+	border-bottom: 2px solid #9C27B0;
 }
 /************* Body ****************/
 body{
-	display: flex;
+
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #5E35B1;
 }
 /************* Header *************/
-header{
-
-}
-header h2{
-		text-transform: none;
-}
-
-/************* Section1 *************/
-#section1{
+#header{
 	display: flex;
 }
-#liseret{
-	background-color: purple;
+header{
+	order:2;
+}
+#prenom{
+	color: #9C27B0;
+	font-weight: bold;
+}
+h1{
+	font-size: 2.3em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+header h2{
+	text-transform: none;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 1.3em;
+	color: #212121;
+	opacity: 0.85;
+}
+#bloc_image{
+	order: 1;
 	width: 30%;
-	margin-right: 45px;
+	background: #9C27B0;
+	margin-right: 25px;
 }
 #image{
+	
 	background: url(images/img_mini.jpg);
-    overflow:hidden;
-    -webkit-border-radius:80px;
-    -moz-border-radius:80px;
-    border-radius:80px;
-    width:140px;
-    height: 140px;
+	overflow:hidden;
+	-webkit-border-radius:80px;
+	-moz-border-radius:80px;
+	border-radius:80px;
+	width:140px;
+	height: 140px;
 	margin: 40px auto 20px auto;
 }
-.bloc_liseret h2{
-	color: white;
-	font-weight: normal;
-	height: 25px;
-	background-color: black;
+
+/**** Bloc liseret et description ***/
+
+#bloc{
+	display: flex;
+}
+.liste{
+	display: flex;
+	margin-bottom: 10px;
+}
+.date{
+	width: 40%;
+}
+.def{
+	width: 60%;
 }
 
-/************* Section2 *************/
-#section2{
-	position: relative;
+/************* Liseret *************/
 
+#liseret{
+	order: 1;
+	background-color: #9C27B0;
+	width: 30%;
+	margin-right: 25px;
+}
+
+.bloc_liseret h2{
+	color: #9C27B0;
+	font-weight: normal;
+	height: 25px;
+	background-color: #212121;
+	text-align: center;
+}
+#border_h2{
+	border-bottom: 2px solid #9C27B0;
+}
+/************* Description *************/
+#description{
+	order: 2;
+	width: 60%;
+}
+
+/************* Contact *************/
+#formation{
+
+}
+
+/************* A Propos *************/
+#a_propos{
+	
+}
+
+/************* Loisirs *************/
+#loisirs{
+	margin-top: 200px;
 }
