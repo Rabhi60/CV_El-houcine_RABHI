@@ -1,5 +1,4 @@
 /************* @font-face ***********/
-
 @font-face {
 	font-family: 'open_sanslight';
 	src: url('fonts/OpenSans-Light-webfont.eot');
@@ -11,7 +10,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'open_sansbold';
 	src: url('fonts/OpenSans-Bold-webfont.eot');
@@ -33,7 +31,6 @@
 		url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
-
 }
 
 /************* Général **************/
@@ -45,7 +42,7 @@ h4{
 }
 p{
 	font-size: 0.8em;
-	font-family: 'open_sanslight'
+	font-family: 'open_sanslight',sans-serif;
 }
 
 ul{
@@ -53,9 +50,6 @@ ul{
 	list-style-type: none;
 }
 
-#loisirs i{
-	padding: 0 6px;
-}
 /************* Body ****************/
 body{
 
@@ -65,40 +59,43 @@ body{
 	border: 1px solid black;
 	box-shadow: 2px 2px 2px #5E35B1;
 }
-/************* Header *************/
+/************* Section header *************/
 #header{
 	display: flex;
 }
+/* header */
 header{
 	order:2;
 }
 #prenom{
 	color: #7E57C2;
 	font-family: 'open_sansregular',sans-serif;
+	font-weight: bold;
 }
 h1{
 	font-size: 2.3em;
 	text-transform: uppercase;
 	font-family: 'open_sanslight',sans-serif;
 	margin: 70px 0 0 0;
+	font-weight: lighter;
 }
 header h2{
 	text-transform: none;
 	font-family: 'open_sansbold';
 	font-size: 1.2em;
-	color: #212121;
-	opacity: 0.85;
+	color: #424242;
 	padding: 0;
 	margin: 0;
 }
 #border_h2{
 	border-bottom: 2px solid #7E57C2;
 }
+/* Div image */
 #bloc_image{
 	order: 1;
 	width: 30%;
 	background: #7E57C2;
-	margin-right: 25px;
+	margin-right: 40px;
 }
 #image{
 
@@ -112,19 +109,16 @@ header h2{
 	margin: 40px auto 20px auto;
 }
 
-/**** Bloc liseret et description ***/
-
+/**** Bloc liseret et main ***/
 #bloc{
 	display: flex;
 }
-
-/************* Liseret *************/
-
+/* Liseret */
 #liseret{
 	order: 1;
 	background-color: #7E57C2;
 	width: 30%;
-	margin-right: 25px;
+	margin-right: 40px;
 }
 
 .bloc_liseret h2{
@@ -135,6 +129,7 @@ header h2{
 	text-align: center;
 	font-size: 1em;
 	line-height: 30px;
+	letter-spacing: 1px;
 }
 .padding_p{
 	padding: 10px 20px;
@@ -149,21 +144,24 @@ header h2{
 #loisirs{
 	margin-top: 170px;
 }
-/************* Description *************/
-
-#description{
+#loisirs i{
+	color: #212121;
+	padding: 0 6px;
+}
+/* Main */
+#main{
 	order: 2;
 	width: 60%;
 }
-#description i{
+#main i{
 	color: #7E57C2;
 	margin-right: 15px;
 }
-#description h2{
+#main h2{
 	padding-bottom: 5px;
 	font-family: 'open_sansregular',sans-serif;
 }
-#description h4{
+#main h4{
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -180,65 +178,136 @@ header h2{
 }
 .grande_puce{
 	width: 5%;
+	margin-top: -2.5px;
 }
 .grande_puce i{
-	font-size: 0.5em;
-	margin: 4px 0 0 0;
-	padding: 0;
+	font-size: 0.55em;
+
 }
 .petite_puce{
 	width: 5%;
+	margin-top: -3px;
 }
-.petite_puce{
+.petite_puce i{
 	font-size: 0.4em;
-	margin: 4px 0 0 0px;
-	padding: 0;
 }
 .date{
 	width: 35%;
-	margin-left: 0;
-	padding-left: 0;
 }
-
 .date h4{
 	font-size: 0.65em;
 	font-family: 'open_sansregular',sans-serif;
 }
-.def{
+.texte{
 	width: 60%;
 }
-.def h4{
+.texte h4{
 	font-size: 0.9em;
 	font-family: 'open_sansregular',sans-serif;
 	margin-bottom: 0;
 }
-.def p{
+.texte p{
 	font-family: 'open_sansregular';
 	text-align: justify;
 	margin-top: 2px;
 }
-/*************** Formation *************/
+/* Formation */
 #formation{
 	margin-bottom: 30px;
 }
-/*************** Expérience ************/
+/* Expérience */
 #experience{
 	margin-bottom: 30px;
 }
-/*************** Recommandations *******/
+/*Recommandations */
 #recommandation_div{
 	display: flex;
 }
-#recommandations div{
-	margin-right: 70px;
+#div_1{
+	width: 45%;
+	margin-right: 40px;
+}
+#div_2{
+	width: 45%;
 }
 #recommandations h4{
-	font-size: 0.8em;
+	font-size: 0.65em;
+	margin-bottom: 2px;
 }
 #recommandations p{
-	font-size: 0.75em;
+	font-size: 0.55em;
 	font-family: 'open_sansregular',sans-serif;
+	margin: 0;
 }
+
+/****** Ecran mobile *********/
+
+
+@media screen and (max-width: 1024px)
+{
+	/* body */
+	body{
+		width: auto;
+	}
+	/* section header */
+	#header{
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	/* header */
+	header{
+		order: 1;
+		text-align: center;
+		margin-bottom: 25px;
+		padding-top: 0px;
+	}
+	#bloc_image{
+		order: 2;
+		width: 100%;
+	}
+	h1{
+		margin-top: 20px;
+	}
+	
+	/* section liseret et main */
+	
+	#bloc{
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	#liseret{
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#contact p{
+		text-align: center;
+		font-size: 1em;
+	}
+	#a_propos p{
+		font-size: 1em;
+	}
+	#loisirs p{
+		text-align: center;
+	}
+	/* main */
+	#main{
+		width: 90%;
+		margin: 0 auto;
+	}
+	#recommandations{
+		padding-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 
