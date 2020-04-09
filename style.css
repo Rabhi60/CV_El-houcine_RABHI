@@ -97,7 +97,7 @@ header h2{
 /* figure image */
 #bloc_image{
 	order: 1;
-	width: 30%
+	width: 30%;
 	background: #7E57C2;
 	margin-right: 40px;
 	text-align: center;
@@ -195,7 +195,6 @@ img{
 }
 #div_1{
 	width: 55%;
-	margin-right: px;
 }
 #div_2{
 	width: 45%;
