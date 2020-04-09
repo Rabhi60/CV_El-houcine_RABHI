@@ -9,53 +9,21 @@
 	</head>
 
 	<body>
-		<section id="header">
-			<!-- HEADER -->
-			<header>
-				<h1><span id="prenom">El-Houcine</span> Rabhi</h1>
-				<h2><span id="border_h2">Dével</span>oppeur web freelance</h2>
-			</header>
-			<!-- IMAGE DE PROFIL-->
-			<div id="bloc_image">
-				<div id="image">
-				</div>
-			</div>
-		</section>
+		<!-- Div bloc -->
+		<div id="bloc">
+			<!-- main header -->
+			<main id="main"><!-- HEADER -->
+				<header>
+					<h1><span id="prenom">El-Houcine</span> Rabhi</h1>
+					<h2><span id="border_h2">Dével</span>oppeur web freelance</h2>
+				</header>
 
-		<section id="bloc">
-			<!-- LISERET -->
-			<div id="liseret">
-				<!-- CONTACT -->
-				<div class="bloc_liseret" id="contact">
-					<h2>Contact</h2>
-					<div class="padding_p">
-						<p>Adresse<br>7 CITE DE PARADIS - 75010 PARIS, France</p>
-						<p>Téléphone<br>01 80 88 80 30</p>
-						<p>Email<br>hello@openclassrooms.com</p>
-						<p>site web<br>openclassrooms.com</p>
-						<p>Twitter<br>@OCFrance</p>
-					</div>
-				</div>
-				<!-- A_PROPOS -->
-				<div class="bloc_liseret" id="a_propos">
-					<h2>à Propos de moi</h2>
-					<p class="padding_p">Depuis tout petit j'ai toujours aimé le monde de l'informatique, mes études ont débouché sur un baccalauréat en Production Graphique en 2009. J'ai appris beaucoup sur le domaine de la PAO, étant en quête de nouveaux horizons, j'ai choisit le developement web qui est une certaine continuité de mes études et un domaine qui me passionne.</p>
-				</div>
-				<!-- LOISIRS -->
-				<div class="bloc_liseret" id="loisirs">
-					<h2>Loisirs</h2>
-					<p class="padding_p"><i class="far fa-futbol fa-4x"></i><i class="fas fa-basketball-ball fa-4x"></i><i class="fas fa-bowling-ball fa-4x"></i></p>
-				</div>
-			</div>
-
-			<!-- DIV main -->
-			<div id="main">
 				<!-- FORMATION -->
-				<article id="formation">
+				<section id="formation">
 					<h2><i class="fas fa-graduation-cap"></i>Formation</h2>
 					<ul>
 						<li>
-							<div  class="liste">
+							<article  class="liste">
 								<div class="grande_puce"><i class="far fa-dot-circle"></i>
 								</div>
 								<div   class="date">
@@ -66,11 +34,11 @@
 									<p>Junior Web Developer</p>
 									<p>Apprentissage et mise en pratique du langage HTML5 et de CSS3, découverte de l'integration web. Utilisation De Git et GitHub pour les futur projets.</p>
 								</div>
-							</div>
+							</article>
 
 						</li>
 						<li>
-							<div class="liste">
+							<article class="liste">
 								<div class="petite_puce"><i  class="fas fa-circle "></i></div>
 								<div class="date">
 									<h4>2017<br>Paris</h4>
@@ -81,19 +49,17 @@
 									</p>
 									<p>Découverte du langage HTML5 et de CSS3, JavaScript avec la bibliothèque jQuery. Utilisation de Bootstrap 4.</p>
 								</div>
-							</div>
-
+							</article>
 						</li>
 					</ul>
-				</article>
+				</section>
 
 				<!-- EXPERIENCE -->
-				<article id="experience">
+				<section id="experience">
 					<h2 ><i class="fas fa-briefcase"></i>Expérience professionnelle</h2>
 					<ul>
 						<li>
-
-							<div class="liste">
+							<article class="liste">
 								<div class="grande_puce"><i class="far fa-dot-circle"></i>
 								</div>
 								<div class="date">
@@ -104,10 +70,10 @@
 									<p>Web Developer</p>
 									<p>Développeur Front End, Integrateur Web.</p>
 								</div>
-							</div>
+							</article>
 						</li>
 						<li>
-							<div class="liste">
+							<article class="liste">
 								<div class="petite_puce"><i  class="fas fa-circle "></i></div>
 								<div class="date">
 									<h4>Février 2019<br>Paris</h4>
@@ -117,14 +83,15 @@
 									<p> Web Developer</p>
 									<p>Développeur Front End, Intégrateur web.</p>
 								</div>
-							</div>
+							</article>
 						</li>
 					</ul>
-				</article>
+				</section>
+
 				<!-- RECOMMANDATIONS -->
-				<article id="recommandations">
+				<section id="recommandations">
 					<h2><i class="fas fa-pencil-alt"></i>Recommandations</h2>
-					<div id="recommandation_div">
+					<article id="recommandation_div">
 						<div id="div_1">
 							<h4>CARLO PURASSANTA</h4>
 							<h4>Président de Microsoft France</h4>
@@ -137,9 +104,42 @@
 							<p>Téléphone : 01 48 48 48 48</p>
 							<p>Email : olivier.dubois@majolieapp.fr</p>
 						</div>
+					</article>
+				</section>
+
+
+			</main>
+			<!-- LISERET -->
+			<main id="liseret">
+				<!-- IMAGE DE PROFIL-->
+				<figure id="bloc_image">
+					<img id="image">
+				</figure>
+
+				<!-- CONTACT -->
+				<aside class="bloc_liseret" id="contact">
+					<h2>Contact</h2>
+					<div class="padding_p">
+						<p>Adresse<br>7 CITE DE PARADIS - 75010 PARIS, France</p>
+						<p>Téléphone<br>01 80 88 80 30</p>
+						<p>Email<br>hello@openclassrooms.com</p>
+						<p>site web<br>openclassrooms.com</p>
+						<p>Twitter<br>@OCFrance</p>
 					</div>
-				</article>
-			</div>
-		</section>
+				</aside>
+				
+				<!-- A_PROPOS -->
+				<div class="bloc_liseret" id="a_propos">
+					<h2>à Propos de moi</h2>
+					<p class="padding_p">Depuis tout petit j'ai toujours aimé le monde de l'informatique, mes études ont débouché sur un baccalauréat en Production Graphique en 2009. J'ai appris beaucoup sur le domaine de la PAO, étant en quête de nouveaux horizons, j'ai choisit le developement web qui est une certaine continuité de mes études et un domaine qui me passionne.</p>
+				</div>
+				
+				<!-- LOISIRS -->
+				<aside class="bloc_liseret" id="loisirs">
+					<h2>Loisirs</h2>
+					<p class="padding_p"><i class="far fa-futbol fa-4x"></i><i class="fas fa-basketball-ball fa-4x"></i><i class="fas fa-bowling-ball fa-4x"></i></p>
+				</aside>
+			</main>
+		</div>
 	</body>
 </html>
