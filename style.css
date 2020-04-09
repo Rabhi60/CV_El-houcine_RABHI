@@ -49,7 +49,6 @@ ul{
 body{
 
 	width: 80vw;
-	
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
@@ -103,8 +102,7 @@ header h2{
 	margin-right: 40px;
 	text-align: center;
 }
-#image{
-	background: url(images/img_mini.jpg);
+img{
 	overflow:hidden;
 	-webkit-border-radius:80px;
 	-moz-border-radius:80px;
@@ -117,47 +115,7 @@ header h2{
 				0px 0px 0px 5.5px rgba(73, 45, 121,0.4);
 }
 
-/* Liseret */
-#liseret{
-	order: 1;
-	background-color: #7E57C2;
-	width: 30%;
-	margin-left: 0px;
-}
-
-.bloc_liseret h2{
-	color: #fff;
-	font-family: 'open_sanslight';
-	height: 30px;
-	background-color: #212121;
-	text-align: center;
-	font-size: 1em;
-	line-height: 30px;
-	letter-spacing: 1px;
-	margin: 0;
-}
-.padding_p{
-	padding: 10px 20px;
-	text-align: justify;
-	font-family: 'open_sansregular', sans-serif;
-
-}
-#contact p{
-	font-family: 'open_sansbold', sans-serif;
-	font-size: 0.7em;
-	
-}
-#loisirs{
-	margin-top: 15em;
-}
-#loisirs p{
-	text-align: center;
-}
-#loisirs i{
-	color: #212121;
-	padding: 0 6px;
-}
-	/* Main */
+/* Main */
 #main{
 	order: 2;
 	width: 60%;
@@ -252,6 +210,47 @@ header h2{
 	margin: 0;
 }
 
+/* Liseret */
+#liseret{
+	order: 1;
+	background-color: #7E57C2;
+	width: 30%;
+	margin-left: 0px;
+}
+
+.bloc_liseret h2{
+	color: #fff;
+	font-family: 'open_sanslight';
+	height: 30px;
+	background-color: #212121;
+	text-align: center;
+	font-size: 1em;
+	line-height: 30px;
+	letter-spacing: 1px;
+	margin: 0;
+}
+.padding_p{
+	padding: 10px 20px;
+	text-align: justify;
+	font-family: 'open_sansregular', sans-serif;
+
+}
+#contact p{
+	font-family: 'open_sansbold', sans-serif;
+	font-size: 0.7em;
+	
+}
+#loisirs{
+	margin-top: 15em;
+}
+#loisirs p{
+	text-align: center;
+}
+#loisirs i{
+	color: #212121;
+	padding: 0 6px;
+}
+	
 /****** Ecran mobile *********/
 
 
