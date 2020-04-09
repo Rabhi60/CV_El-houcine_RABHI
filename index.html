@@ -10,9 +10,9 @@
 
 	<body>
 		<!-- Div bloc -->
-		<div id="bloc">
-			<!-- main header -->
-			<main id="main"><!-- HEADER -->
+		<main id="main">
+			<!-- bloc header -->
+			<div id="bloc"><!-- HEADER -->
 				<header>
 					<h1><span id="prenom">El-Houcine</span> Rabhi</h1>
 					<h2><span id="border_h2">Dével</span>oppeur web freelance</h2>
@@ -106,39 +106,33 @@
 						</div>
 					</article>
 				</section>
-			</main>
+			</div>
 			
 			<!-- LISERET -->
-			<div id="liseret">
+			<aside id="liseret">
 				<!-- IMAGE DE PROFIL-->
 				<figure id="bloc_image">
 					<img src="images/img_mini.jpg" alt="ma photo">
 				</figure>
 
 				<!-- CONTACT -->
-				<aside class="bloc_liseret" id="contact">
 					<h2>Contact</h2>
-					<div class="padding_p">
-						<p>Adresse<br>7 CITE DE PARADIS - 75010 PARIS, France</p>
-						<p>Téléphone<br>01 80 88 80 30</p>
-						<p>Email<br>hello@openclassrooms.com</p>
-						<p>site web<br>openclassrooms.com</p>
-						<p>Twitter<br>@OCFrance</p>
-					</div>
-				</aside>
-				
+					<ul class="padding_p" id="contact">
+						<li><p>Adresse<br>7 CITE DE PARADIS - 75010 PARIS, France</p></li>
+						<li><p>Téléphone<br>01 80 88 80 30</p></li>
+						<li><p>Email<br>hello@openclassrooms.com</p></li>
+						<li><p>site web<br>openclassrooms.com</p></li>
+						<li><p>Twitter<br>@OCFrance</p></li>
+					</ul>
+					
 				<!-- A_PROPOS -->
-				<aside class="bloc_liseret" id="a_propos">
 					<h2>à Propos de moi</h2>
-					<p class="padding_p">Depuis tout petit j'ai toujours aimé le monde de l'informatique, mes études ont débouché sur un baccalauréat en Production Graphique en 2009. J'ai appris beaucoup sur le domaine de la PAO, étant en quête de nouveaux horizons, j'ai choisit le developement web qui est une certaine continuité de mes études et un domaine qui me passionne.</p>
-				</aside>
+					<p class="padding_p" id="a_propos">Depuis tout petit j'ai toujours aimé le monde de l'informatique, mes études ont débouché sur un baccalauréat en Production Graphique en 2009. J'ai appris beaucoup sur le domaine de la PAO, étant en quête de nouveaux horizons, j'ai choisit le developement web qui est une certaine continuité de mes études et un domaine qui me passionne.</p>
 				
 				<!-- LOISIRS -->
-				<aside class="bloc_liseret" id="loisirs">
-					<h2>Loisirs</h2>
-					<p class="padding_p"><i class="far fa-futbol fa-4x"></i><i class="fas fa-basketball-ball fa-4x"></i><i class="fas fa-bowling-ball fa-4x"></i></p>
-				</aside>
-			</div>
-		</div>
+					<h2 id="loisirs">Loisirs</h2>
+					<p  id="loisirs_p"><i class="far fa-futbol fa-2x"></i><i class="fas fa-basketball-ball fa-2x"></i><i class="fas fa-bowling-ball fa-2x"></i></p>
+			</aside>
+		</main>
 	</body>
 </html>

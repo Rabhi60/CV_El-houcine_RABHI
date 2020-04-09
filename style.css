@@ -54,14 +54,27 @@ body{
 	border: 1px solid black;
 	box-shadow: 2px 2px 2px #5E35B1;
 }
-/**** Bloc liseret et main ***/
-#bloc{
+/****  main ***/
+#main{
 	display: flex;
 	margin: 0px;
 }
-/************* main header *************/
+
+
+/* bloc */
+
+#bloc{
+	order: 2;
+	width: 60%;
+	margin: 0 auto;
+}
+#bloc i{
+	color: #7E57C2;
+	margin-right: 15px;
+}
 
 /* header */
+
 header{
 	order:2;
 	margin-bottom: 4em;
@@ -73,17 +86,17 @@ header{
 }
 
 h1{
-	font-size: 2.8em;
+	font-size: 3em;
 	text-transform: uppercase;
 	font-family: 'open_sanslight',sans-serif;
-	margin: 1.5em 0 0 0;
+	margin: 1.3em 0 0 0;
 	font-weight: lighter;
 }
 
 header h2{
 	text-transform: none;
 	font-family: 'open_sansbold';
-	font-size: 1.2em;
+	font-size: 1.5em;
 	color: #424242;
 	padding: 0;
 	margin: 0;
@@ -93,6 +106,99 @@ header h2{
 #border_h2{
 	border-bottom: 2px solid #7E57C2;
 }
+
+#formation h2,#experience h2,#recommandations h2{
+	padding-bottom: 5px;
+	font-family: 'open_sansregular',sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-bottom: 2px solid #7E57C2;
+}
+#bloc h4{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#bloc p{
+	font-size: 1.2em;
+}
+.liste{
+	display: flex;
+	margin-bottom: 1.5em;
+	margin-left: -1.3em;
+}
+.grande_puce{
+	width: 5%;
+}
+.grande_puce i{
+	font-size: 0.75em;
+	margin-top: 0.5em;
+}
+.petite_puce{
+	width: 5%;
+
+}
+.petite_puce i{
+	font-size: 0.5em;
+}
+.date{
+	width: 35%;
+}
+.date h4{
+	font-size: 0.9em;
+	font-family: 'open_sansregular',sans-serif;
+}
+.texte{
+	width: 60%;
+}
+.texte h4{
+	font-size: 1.2em;
+	font-family: 'open_sansregular',sans-serif;
+	margin-bottom: 0;
+}
+.texte p{
+	font-family: 'open_sansregular', sans-serif;
+	text-align: justify;
+	margin-top: 2px;
+}
+/* Formation */
+#formation{
+	margin-bottom: 4em;
+}
+
+/* Expérience */
+#experience{
+	margin-bottom: 4em;
+}
+
+/*Recommandations */
+#recommandation_div{
+	display: flex;
+}
+#div_1{
+	width: 55%;
+}
+#div_2{
+	width: 45%;
+}
+#recommandations h4{
+	font-size: 1.2em;
+	margin-bottom: 2px;
+}
+#recommandations p{
+	font-size: 1em;
+	font-family: 'open_sansregular',sans-serif;
+	margin: 0;
+}
+
+/* Liseret */
+#liseret{
+	order: 1;
+	background-color: #7E57C2;
+	width: 30%;
+	margin-left: 0px;
+}
+
+
 
 /* figure image */
 #bloc_image{
@@ -117,139 +223,54 @@ img{
 				0px 0px 0px 5.5px rgba(73, 45, 121,0.4);
 }
 
-/* Main */
-#main{
-	order: 2;
-	width: 60%;
-	margin: 0 auto;
-}
-#main i{
-	color: #7E57C2;
-	margin-right: 15px;
-}
-#formation h2,#experience h2,#recommandations h2{
-	padding-bottom: 5px;
-	font-family: 'open_sansregular',sans-serif;
-	font-weight: bold;
-	font-size: 1.2em;
-	border-bottom: 2px solid #7E57C2;
-}
-#main h4{
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-#main p{
-	font-size: 1.2em;
-}
-.liste{
-	display: flex;
-	margin-bottom: 10px;
-	margin-left: -20px;
-}
-.grande_puce{
-	width: 5%;
-	margin-top: -2.5px;
-}
-.grande_puce i{
-	font-size: 0.55em;
-
-}
-.petite_puce{
-	width: 5%;
-	margin-top: -3px;
-}
-.petite_puce i{
-	font-size: 0.4em;
-}
-.date{
-	width: 35%;
-}
-.date h4{
-	font-size: 0.65em;
-	font-family: 'open_sansregular',sans-serif;
-}
-.texte{
-	width: 60%;
-}
-.texte h4{
-	font-size: 1.2em;
-	font-family: 'open_sansregular',sans-serif;
-	margin-bottom: 0;
-}
-.texte p{
-	font-family: 'open_sansregular', sans-serif;
-	text-align: justify;
-	margin-top: 2px;
-}
-/* Formation */
-#formation{
-	margin-bottom: 20px;
-}
-
-/* Expérience */
-#experience{
-	margin-bottom: 20px;
-}
-
-/*Recommandations */
-#recommandation_div{
-	display: flex;
-}
-#div_1{
-	width: 55%;
-}
-#div_2{
-	width: 45%;
-}
-#recommandations h4{
-	font-size: 0.95em;
-	margin-bottom: 2px;
-}
-#recommandations p{
-	font-size: 0.75em;
-	font-family: 'open_sansregular',sans-serif;
-	margin: 0;
-}
-
-/* Liseret */
-#liseret{
-	order: 1;
-	background-color: #7E57C2;
-	width: 30%;
-	margin-left: 0px;
-}
-
-.bloc_liseret h2{
+#liseret h2{
 	color: #fff;
 	font-family: 'open_sanslight';
-	height: 30px;
+	height: 1.5em;
 	background-color: #212121;
 	text-align: center;
-	font-size: 1em;
-	line-height: 30px;
+	font-size: 1.5em;
+	line-height: 1.5em;
 	letter-spacing: 1px;
 	margin: 0;
 }
 .padding_p{
-	padding: 10px 20px;
+	padding: 1.5em 2em 3em 2em;
 	text-align: justify;
 	font-family: 'open_sansregular', sans-serif;
-
+	margin: 0 auto;
+	
+	
 }
 #contact p{
 	font-family: 'open_sansbold', sans-serif;
-	font-size: 0.7em;
+	font-size: 0.9em;
+}
+
+#a_propos{
 	
+	
+	font-size: 1.1em;
+	padding-bottom: 15em;
 }
-#loisirs{
-	margin-top: 15em;
-}
-#loisirs p{
+
+#loisirs_p{
 	text-align: center;
+	margin: 0 auto;
+	padding: 1.5em 2em 1.5em 2em;
 }
-#loisirs i{
+#loisirs_p i{
 	color: #212121;
-	padding: 0 6px;
+	margin: 1px 5px;
+	text-align: center;
+	line-height: 2em;
+	overflow:hidden;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	border-radius:1em;
+	width:2em;
+	height: 2em;
+	border: 1px solid black;
 }
 	
 /****** Ecran mobile *********/
@@ -264,8 +285,8 @@ img{
 		margin: 0;
 	}
 	
-	/* Div bloc */
-	#bloc{
+	/* main */
+	#main{
 		flex-direction: column;
 		margin: 0 auto;
 	}
@@ -299,7 +320,7 @@ img{
 	
 	/* main liseret et main header */
 	
-	#bloc{
+	#main{
 		flex-direction: column;
 		margin: 0 auto;
 	}
@@ -319,12 +340,12 @@ img{
 		font-size: 1em;
 	}
 	
-	#loisirs p{
+	#loisirs_p{
 		text-align: center;
 	}
 	
-	/* main */
-	#main{
+	/* bloc */
+	#bloc{
 		width: 90%;
 		margin: 15px auto;
 	}
