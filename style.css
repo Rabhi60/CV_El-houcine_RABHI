@@ -37,48 +37,60 @@
 h2{
 	text-transform: uppercase;
 }
+h3{
+	font-family: 'open_sansregular',sans-serif;
+}
 h4{
 	font-family: 'open_sansregular',sans-serif;
 }
+p{
+	font-size: 1.2em;
+}
 ul{
-	margin-left: -20px;
-	list-style-type: none;
+	list-style: none;
 }
 
 /************* Body ****************/
 body{
-
-	width: 80vw;
+	font-size: 16px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
 	box-shadow: 2px 2px 2px #5E35B1;
-}
-/****  main ***/
-#main{
 	display: flex;
-	margin: 0px;
 }
 
-
-/* bloc */
-
-#bloc{
+/****  main ***/
+.main{
 	order: 2;
-	width: 60%;
+	width: 59%;
 	margin: 0 auto;
 }
-#bloc i{
+
+.main i{
 	color: #7E57C2;
-	margin-right: 15px;
 }
 
-/* header */
+.main ul{
+	margin-left: -1.2rem;
+}
+
+.main h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#formation i,#experience i,#recommandations i{
+	margin-right: 1.5rem;
+}
+
+	/* header */
 
 header{
-	order:2;
-	margin-bottom: 4em;
+	margin: 5rem 0 7rem 0;
 }
+
 #prenom{
 	color: #7E57C2;
 	font-family: 'open_sansregular',sans-serif;
@@ -86,138 +98,155 @@ header{
 }
 
 h1{
-	font-size: 3em;
+	font-size: 4rem;
 	text-transform: uppercase;
 	font-family: 'open_sanslight',sans-serif;
-	margin: 1.3em 0 0 0;
+	margin: 0 0 0 0;
 	font-weight: lighter;
 }
 
 header h2{
 	text-transform: none;
 	font-family: 'open_sansbold';
-	font-size: 1.5em;
+	font-size: 1.8rem;
 	color: #424242;
 	padding: 0;
 	margin: 0;
-
 }
 
 #border_h2{
-	border-bottom: 2px solid #7E57C2;
+	border-bottom: 0.2rem solid #7E57C2;
 }
 
 #formation h2,#experience h2,#recommandations h2{
-	padding-bottom: 5px;
+	padding-bottom: 0.4rem;
 	font-family: 'open_sansregular',sans-serif;
 	font-weight: bold;
-	font-size: 1.5em;
-	border-bottom: 2px solid #7E57C2;
+	font-size: 2rem;
+	border-bottom: 0.2rem solid #7E57C2;
 }
-#bloc h4{
-	margin-top: 0px;
-	margin-bottom: 0px;
+
+.liste {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	margin-left: -1.3rem;
 }
-#bloc p{
-	font-size: 1.2em;
-}
-.liste{
+
+.liste ul{
 	display: flex;
-	margin-bottom: 1.5em;
-	margin-left: -1.3em;
 }
+
 .grande_puce{
 	width: 5%;
 }
+
 .grande_puce i{
-	font-size: 0.75em;
-	margin-top: 0.5em;
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+	margin-right: 0rem;
 }
 .petite_puce{
 	width: 5%;
 
 }
 .petite_puce i{
-	font-size: 0.5em;
+	font-size: 0.5rem;
+	margin-right: 0rem;
 }
+
 .date{
-	width: 35%;
+	width: 30%;
 }
-.date h4{
-	font-size: 0.9em;
+
+.date h3{
+	font-size: 1rem;
 	font-family: 'open_sansregular',sans-serif;
 }
+
 .texte{
-	width: 60%;
+	width: 65%;
 }
-.texte h4{
-	font-size: 1.2em;
+
+.texte h3{
+	font-size: 1.5rem;
 	font-family: 'open_sansregular',sans-serif;
 	margin-bottom: 0;
 }
+
 .texte p{
 	font-family: 'open_sansregular', sans-serif;
 	text-align: justify;
-	margin-top: 2px;
+	font-size: 1.3rem;
+	margin-top: 0.2rem;
 }
+
 /* Formation */
+
 #formation{
-	margin-bottom: 4em;
+	margin-bottom: 4rem;
 }
 
 /* Expérience */
 #experience{
-	margin-bottom: 4em;
+	margin-bottom: 4rem;
 }
 
 /*Recommandations */
+
 #recommandation_div{
 	display: flex;
 }
+
 #div_1{
 	width: 55%;
 }
+
 #div_2{
 	width: 45%;
 }
+
 #recommandations h4{
-	font-size: 1.2em;
-	margin-bottom: 2px;
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.2rem;
 }
+
 #recommandations p{
-	font-size: 1em;
+	font-size: 1rem;
 	font-family: 'open_sansregular',sans-serif;
 	margin: 0;
 }
 
-/* Liseret */
+/*** Liseret ***/
+
 #liseret{
 	order: 1;
 	background-color: #7E57C2;
-	width: 30%;
-	margin-left: 0px;
+	width: 35%;
+	margin-left: 0;
+}
+
+#liseret ul{
+	padding-left: 0;
 }
 
 
+	/* figure image */
 
-/* figure image */
 #bloc_image{
 	order: 1;
-	width: 30%;
 	background: #7E57C2;
-	margin-right: 40px;
+	margin: 3rem auto 2rem auto;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
+
 img{
 	overflow:hidden;
-	-webkit-border-radius:80px;
-	-moz-border-radius:80px;
-	border-radius:80px;
-	width:140px;
-	height: 140px;
-	margin: 35px auto 15px auto;
+	-webkit-border-radius:7.5rem;
+	-moz-border-radius:7.5rem;
+	border-radius:7.5rem;
+	width:13.125rem;
+	height: 13.125rem;
 	box-shadow: 0px 0px 0px 1px rgba(94, 53, 177, 0.5),
 				0px 0px 0px 4px rgba(99, 79, 134, 0.4),
 				0px 0px 0px 5.5px rgba(73, 45, 121,0.4);
@@ -226,53 +255,90 @@ img{
 #liseret h2{
 	color: #fff;
 	font-family: 'open_sanslight';
-	height: 1.5em;
+	height: 3rem;
 	background-color: #212121;
 	text-align: center;
-	font-size: 1.5em;
-	line-height: 1.5em;
-	letter-spacing: 1px;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	letter-spacing: 0.1rem;
 	margin: 0;
 }
+
 .padding_p{
-	padding: 1.5em 2em 3em 2em;
+	padding: 1.5rem 2rem 3rem 2rem;
 	text-align: justify;
 	font-family: 'open_sansregular', sans-serif;
 	margin: 0 auto;
-	
-	
 }
+
 #contact p{
 	font-family: 'open_sansbold', sans-serif;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 }
 
 #a_propos{
-	
-	
-	font-size: 1.1em;
-	padding-bottom: 15em;
+	font-size: 1.1rem;
+	padding-bottom: 28rem;
 }
 
 #loisirs_p{
 	text-align: center;
 	margin: 0 auto;
-	padding: 1.5em 2em 1.5em 2em;
+	padding: 1rem 2rem 0 2rem;
 }
+
 #loisirs_p i{
+	font-size: 2.5rem;
 	color: #212121;
-	margin: 1px 5px;
+	margin: 0.1rem 0.5rem;
 	text-align: center;
-	line-height: 2em;
+	line-height: 4rem;
 	overflow:hidden;
-	-webkit-border-radius:1em;
-	-moz-border-radius:1em;
-	border-radius:1em;
-	width:2em;
-	height: 2em;
-	border: 1px solid black;
+	-webkit-border-radius:3rem;
+	-moz-border-radius:3rem;
+	border-radius:3rem;
+	width: 4rem;
+	height: 4rem;
+	border: 0.05rem solid black;
 }
 	
+
+/****** Ecran Laptop - 1024px *********/
+
+@media screen and (max-width: 1024px){
+	
+	/*main*/
+	
+	h1{
+		font-size: 3rem;
+	}
+	
+	header h2{
+		font-size: 1.4rem;
+	}
+	
+	#recommandations h2, #formation h2, #experience h2{
+		font-size: 1.7rem;
+	}
+	
+	.date h3{
+		font-size: 0.8rem;
+	}
+	
+	.texte h3{
+		font-size: 1.1rem;
+	}
+	
+	/*liseret*/
+	
+	#a_propos{
+		padding-bottom: 22rem;
+	}
+	#loisirs_p i{
+		margin: 0.1rem 0.2rem;
+	}
+}
+
 /****** Ecran mobile *********/
 
 
@@ -281,54 +347,64 @@ img{
 	/* body */
 	body{
 		width: auto;
-		min-width: 460px;
-		margin: 0;
-	}
-	
-	/* main */
-	#main{
+		min-width: 480px;
 		flex-direction: column;
 		margin: 0 auto;
 	}
 	
-	/* main header */
+	/*** main ***/
+	
+	.main{
+		margin: 0 auto;
+		width: 90%;
+	}
 	
 	/* header */
+	
 	header{
 		order: 1;
 		text-align: center;
-		margin-bottom: 3em;
+		margin-bottom: 3rem;
 		padding-top: 0px;
+	}
+	#recommandations{
+		margin-bottom:  2rem;
+	}
+	
+	#recommandations h2, #formation h2, #experience h2{
+		font-size: 1.5rem;
+	}
+	
+	.date h3{
+		0.9em;
+	}
+	
+	.texte h3{
+		font-size: 1.2em;
+	}
+	
+	#div_1{
+		margin-right: 0.5rem;
+	}
+	
+	/* liseret */
+	
+	#liseret{
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 	#bloc_image{
 		order: 2;
-		width: 100%;
+		width: 100vw;
 		margin-right: auto;
 		margin-left: auto;
 		text-align: center;
 	}
 	
 	#image{
-		margin-bottom: 30px;
-	}
-	
-	h1{
-		margin-top: 20px;
-	}
-	
-	
-	/* main liseret et main header */
-	
-	#main{
-		flex-direction: column;
-		margin: 0 auto;
-	}
-	
-	#liseret{
-		width: 100%;
-		margin-right: auto;
-		margin-left: auto;
+		margin-bottom: 2rem;
 	}
 	
 	#contact p{
@@ -342,15 +418,7 @@ img{
 	
 	#loisirs_p{
 		text-align: center;
-	}
-	
-	/* bloc */
-	#bloc{
-		width: 90%;
-		margin: 15px auto;
-	}
-	#recommandations{
-		margin-bottom:  10px;
+		padding-bottom: 0;
 	}
 }
 
