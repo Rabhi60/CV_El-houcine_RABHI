@@ -34,6 +34,19 @@
 }
 
 /************* Général **************/
+html, body{
+	font-size: 16px;
+}
+body{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #5E35B1;
+	display: flex;
+}
+
+
 h2{
 	text-transform: uppercase;
 }
@@ -50,16 +63,6 @@ ul{
 	list-style: none;
 }
 
-/************* Body ****************/
-body{
-	font-size: 16px;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid black;
-	box-shadow: 2px 2px 2px #5E35B1;
-	display: flex;
-}
 
 /****  main ***/
 .main{
@@ -305,7 +308,7 @@ img{
 
 /****** Ecran Laptop - 1024px *********/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1090px){
 	
 	/*main*/
 	
@@ -342,7 +345,7 @@ img{
 /****** Ecran mobile *********/
 
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 807px)
 {
 	/* body */
 	body{
