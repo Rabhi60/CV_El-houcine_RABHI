@@ -57,7 +57,7 @@ h4{
 	font-family: 'open_sansregular',sans-serif;
 }
 p{
-	font-size: 1.2em;
+	font-size: 1.2rem;
 }
 ul{
 	list-style: none;
@@ -325,7 +325,7 @@ img{
 	}
 	
 	.date h3{
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 	}
 	
 	.texte h3{
@@ -379,7 +379,7 @@ img{
 	}
 	
 	.date h3{
-		0.9em;
+		font-size:  0.9rem;
 	}
 	
 	.texte h3{
