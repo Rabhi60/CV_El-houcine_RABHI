@@ -1,4 +1,5 @@
 /************* @font-face ***********/
+
 @font-face {
 	font-family: 'open_sanslight';
 	src: url('fonts/OpenSans-Light-webfont.eot');
@@ -34,9 +35,11 @@
 }
 
 /************* Général **************/
+
 html, body{
 	font-size: 16px;
 }
+
 body{
 	width: 90%;
 	margin-left: auto;
@@ -46,25 +49,24 @@ body{
 	display: flex;
 }
 
-
 h2{
 	text-transform: uppercase;
 }
-h3{
+
+h2,h3, h4, p{
 	font-family: 'open_sansregular',sans-serif;
 }
-h4{
-	font-family: 'open_sansregular',sans-serif;
-}
+
 p{
 	font-size: 1.2rem;
 }
+
 ul{
 	list-style: none;
 }
 
-
 /****  main ***/
+
 .main{
 	order: 2;
 	width: 59%;
@@ -94,18 +96,18 @@ header{
 	margin: 5rem 0 7rem 0;
 }
 
-#prenom{
-	color: #7E57C2;
-	font-family: 'open_sansregular',sans-serif;
-	font-weight: bold;
-}
-
 h1{
 	font-size: 4rem;
 	text-transform: uppercase;
 	font-family: 'open_sanslight',sans-serif;
 	margin: 0 0 0 0;
 	font-weight: lighter;
+}
+
+#prenom{
+	color: #7E57C2;
+	font-family: 'open_sansregular',sans-serif;
+	font-weight: bold;
 }
 
 header h2{
@@ -120,6 +122,8 @@ header h2{
 #border_h2{
 	border-bottom: 0.2rem solid #7E57C2;
 }
+
+/* Section */
 
 #formation h2,#experience h2,#recommandations h2{
 	padding-bottom: 0.4rem;
@@ -163,7 +167,6 @@ header h2{
 
 .date h3{
 	font-size: 1rem;
-	font-family: 'open_sansregular',sans-serif;
 }
 
 .texte{
@@ -172,12 +175,10 @@ header h2{
 
 .texte h3{
 	font-size: 1.5rem;
-	font-family: 'open_sansregular',sans-serif;
 	margin-bottom: 0;
 }
 
 .texte p{
-	font-family: 'open_sansregular', sans-serif;
 	text-align: justify;
 	font-size: 1.3rem;
 	margin-top: 0.2rem;
@@ -216,11 +217,10 @@ header h2{
 
 #recommandations p{
 	font-size: 1rem;
-	font-family: 'open_sansregular',sans-serif;
 	margin: 0;
 }
 
-/*** Liseret ***/
+	/*** Liseret ***/
 
 #liseret{
 	order: 1;
@@ -232,7 +232,6 @@ header h2{
 #liseret ul{
 	padding-left: 0;
 }
-
 
 	/* figure image */
 
@@ -257,20 +256,17 @@ img{
 
 #liseret h2{
 	color: #fff;
-	font-family: 'open_sanslight';
-	height: 3rem;
+	height: 4rem;
 	background-color: #212121;
 	text-align: center;
-	font-size: 1.5rem;
-	line-height: 3rem;
+	font-size: 2rem;
+	line-height: 4rem;
 	letter-spacing: 0.1rem;
 	margin: 0;
 }
 
 .padding_p{
 	padding: 1.5rem 2rem 3rem 2rem;
-	text-align: justify;
-	font-family: 'open_sansregular', sans-serif;
 	margin: 0 auto;
 }
 
@@ -282,6 +278,7 @@ img{
 #a_propos{
 	font-size: 1.1rem;
 	padding-bottom: 28rem;
+	text-align: justify;
 }
 
 #loisirs_p{
@@ -334,6 +331,14 @@ img{
 	
 	/*liseret*/
 	
+	#liseret h2{
+	height: 3rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	letter-spacing: 0.1rem;
+	margin: 0;
+	}
+	
 	#a_propos{
 		padding-bottom: 22rem;
 	}
@@ -342,12 +347,13 @@ img{
 	}
 }
 
-/****** Ecran mobile *********/
 
+/****** Ecran mobile *********/
 
 @media screen and (max-width: 807px)
 {
 	/* body */
+	
 	body{
 		width: auto;
 		min-width: 480px;
@@ -370,6 +376,9 @@ img{
 		margin-bottom: 3rem;
 		padding-top: 0px;
 	}
+	
+	/* section */
+	
 	#recommandations{
 		margin-bottom:  2rem;
 	}
@@ -400,7 +409,7 @@ img{
 	
 	#bloc_image{
 		order: 2;
-		width: 100vw;
+		width: 100%;
 		margin-right: auto;
 		margin-left: auto;
 		text-align: center;
