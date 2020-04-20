@@ -49,7 +49,7 @@ body{
 	display: flex;
 }
 
-h2{
+h1, h2{
 	text-transform: uppercase;
 }
 
@@ -73,23 +73,6 @@ ul{
 	margin: 0 auto;
 }
 
-.main i{
-	color: #7E57C2;
-}
-
-.main ul{
-	margin-left: -1.2rem;
-}
-
-.main h3{
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-#formation i,#experience i,#recommandations i{
-	margin-right: 1.5rem;
-}
-
 	/* header */
 
 header{
@@ -98,9 +81,8 @@ header{
 
 h1{
 	font-size: 4rem;
-	text-transform: uppercase;
 	font-family: 'open_sanslight',sans-serif;
-	margin: 0 0 0 0;
+	margin: 0;
 	font-weight: lighter;
 }
 
@@ -125,18 +107,29 @@ header h2{
 
 /* Section */
 
-#formation h2,#experience h2,#recommandations h2{
+section i{
+	color: #7E57C2;
+	margin-right: 1.5rem;
+}
+
+section h2{
 	padding-bottom: 0.4rem;
-	font-family: 'open_sansregular',sans-serif;
-	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 0.2rem solid #7E57C2;
+}
+
+article ul{
+	margin-left: -2.5rem;
+}
+
+article h3{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .liste {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
-	margin-left: -1.3rem;
 }
 
 .liste ul{
@@ -149,7 +142,7 @@ header h2{
 
 .grande_puce i{
 	font-size: 0.75rem;
-	margin-top: 0.5rem;
+	margin-top: 0.4rem;
 	margin-right: 0rem;
 }
 .petite_puce{
@@ -158,6 +151,7 @@ header h2{
 }
 .petite_puce i{
 	font-size: 0.5rem;
+	margin-top: 0.4rem;
 	margin-right: 0rem;
 }
 
@@ -184,14 +178,9 @@ header h2{
 	margin-top: 0.2rem;
 }
 
-/* Formation */
+/* Formation et Expérience */
 
-#formation{
-	margin-bottom: 4rem;
-}
-
-/* Expérience */
-#experience{
+#formation, #experience{
 	margin-bottom: 4rem;
 }
 
@@ -299,7 +288,7 @@ img{
 	border-radius:3rem;
 	width: 4rem;
 	height: 4rem;
-	border: 0.05rem solid black;
+	border: 0.05rem solid #212121;
 }
 	
 
@@ -317,7 +306,7 @@ img{
 		font-size: 1.4rem;
 	}
 	
-	#recommandations h2, #formation h2, #experience h2{
+	section h2{
 		font-size: 1.7rem;
 	}
 	
@@ -342,6 +331,7 @@ img{
 	#a_propos{
 		padding-bottom: 22rem;
 	}
+	
 	#loisirs_p i{
 		margin: 0.1rem 0.2rem;
 	}
@@ -371,7 +361,6 @@ img{
 	/* header */
 	
 	header{
-		order: 1;
 		text-align: center;
 		margin-bottom: 3rem;
 		padding-top: 0px;
@@ -408,7 +397,6 @@ img{
 	}
 	
 	#bloc_image{
-		order: 2;
 		width: 100%;
 		margin-right: auto;
 		margin-left: auto;
@@ -429,7 +417,6 @@ img{
 	}
 	
 	#loisirs_p{
-		text-align: center;
 		padding-bottom: 0;
 	}
 }
