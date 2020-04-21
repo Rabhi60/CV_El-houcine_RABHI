@@ -340,8 +340,8 @@ img{
 
 /****** Ecran mobile *********/
 
-@media screen and (max-width: 807px)
-{
+@media screen and (max-width: 807px){
+	
 	/* body */
 	
 	body{
