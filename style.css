@@ -292,7 +292,7 @@ img{
 }
 	
 
-/****** Ecran Laptop - 1024px *********/
+/****** Ecran Laptop - 1090px *********/
 
 @media screen and (max-width: 1090px){
 	
@@ -338,7 +338,7 @@ img{
 }
 
 
-/****** Ecran mobile *********/
+/****** Ecran mobile/tablette *********/
 
 @media screen and (max-width: 807px){
 	
